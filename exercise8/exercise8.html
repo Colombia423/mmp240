@@ -3,68 +3,67 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Exercise 8</title>
 
     <style>
     /* Add CSS code here */
 
-    ul{              /* resetting ul defaults padding and margins */
-      padding:0;
-      margin:0;
+    ul { /* Resetting default padding and margins for the unordered list */
+      padding: 0;
+      margin: 0;
     }
 
-    #wrapper{
-      max-width:1200px;
-      margin:0 auto;
+    #wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
       font-family: sans-serif;
     }
-    nav{
+
+    nav {
       background-color: #008387;
       padding: 1em;
     }
+
+    /* Default styles for nav items: horizontal menu */
     nav li {
       display: inline;
-      padding:0 2em;
+      padding: 0 2em;
       border-right: solid 1px #fff;
     }
 
-    nav li:last-child{
-      border:none;
+    nav li:last-child {
+      border: none; /* Remove border for the last item */
     }
 
-    nav li a{
+    nav li a {
       text-decoration: none;
       color: #fff;
     }
 
-    nav li a:hover{
+    nav li a:hover {
       text-decoration: underline;
     }
 
-  
+    /* Mobile styles: for viewports of width 768px and smaller */
+    @media (max-width: 768px) {
+      /* Change the display of menu items to block for a vertical layout */
+      nav li {
+        display: block;
+        padding: 0.5em; /* Add padding for spacing between items */
+        border-bottom: solid 1px #fff; /* Border at the bottom of each item */
+      }
 
+      nav li:last-child {
+        border: none; /* Remove the bottom border from the last item */
+      }
 
-@media (max-width: 768px) {
- 
-  nav li {
-    display: block;
-    padding: 0.5em; 
-    border-bottom: solid 1px #fff; 
-  }
-
-  nav li:last-child {
-    border: none; 
-  }
-
-  
-  nav {
-    padding: 0; 
-  }
-}
+      /* Remove padding from the nav element */
+      nav {
+        padding: 0; /* Remove padding to make the borders extend to the edges */
+      }
+    }
 
     </style>
-
   </head>
   <body>
     <div id="wrapper">
