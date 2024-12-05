@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 10</title>
+    <style>
+      /* General reset for list and margin */
+      ul {
+        padding: 0;
+        margin: 0;
+      }
+
+      /* Style for the main menu container */
+      nav {
+        width: 200px;
+      }
+
+      /* Style for the main list items */
+      nav ul {
+        list-style-type: none;
+      }
+
+      nav ul li {
+        position: relative; /* Needed for positioning the dropdown */
+      }
+
+      /* Style for the main links */
+      nav a {
+        display: block; /* Make the links take up the full width of the li */
+        padding: 10px;
+        text-decoration: none;
+        color: #fff;
+        background-color: #008387;
+        border-bottom: 1px solid #fff;
+      }
+
+      /* Change link color when hovering */
+      nav a:hover {
+        background-color: #005f5f;
+      }
+
+      /* Style for the down arrow icon */
+      .arrow {
+        float: right;
+        width: 12px;
+        height: 12px;
+        margin-top: 5px;
+      }
+
+      /* Hide nested menu by default */
+      nav ul ul {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        background-color: #006060;
+        width: 200px;
+        border: 1px solid #005f5f;
+      }
+
+      /* Style for the nested list items */
+      nav ul ul li {
+        border-bottom: none;
+      }
+
+      /* Display nested menu when hovering over parent li */
+      nav ul li:hover > ul {
+        display: block;
+      }
+
+      /* Optional: Add padding to nested links for better spacing */
+      nav ul ul a {
+        padding-left: 20px;
+        background-color: #004545;
+      }
+      
+      /* Prevent bullets and padding from nested lists */
+      nav ul ul ul {
+        padding-left: 0;
+        list-style-type: none;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="#">Fruits <img src="https://via.placeholder.com/12x12.png?text=%E2%86%93" class="arrow" alt="arrow"></a>
+          <ul>
+            <li><a href="#">Apple</a></li>
+            <li><a href="#">Banana</a></li>
+            <li><a href="#">Orange</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Vegetables <img src="https://via.placeholder.com/12x12.png?text=%E2%86%93" class="arrow" alt="arrow"></a>
+          <ul>
+            <li><a href="#">Carrot</a></li>
+            <li><a href="#">Spinach</a></li>
+            <li><a href="#">Cucumber</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Grains <img src="https://via.placeholder.com/12x12.png?text=%E2%86%93" class="arrow" alt="arrow"></a>
+          <ul>
+            <li><a href="#">Rice</a></li>
+            <li><a href="#">Wheat</a></li>
+            <li><a href="#">Barley</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
