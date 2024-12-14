@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUNY Design & Animation Programs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="borough.html">Search by Borough</a></li>
+                <li><a href="discipline.html">Search by Discipline</a></li>
+                <li><a href="degree.html">Search by Degree</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Search Filters (on the homepage) -->
+        <section id="search-filters">
+            <form>
+                <label for="borough">Select Borough:</label>
+                <select id="borough" name="borough">
+                    <option value="all">All Boroughs</option>
+                    <option value="manhattan">Manhattan</option>
+                    <option value="brooklyn">Brooklyn</option>
+                    <!-- More boroughs... -->
+                </select>
+
+                <label for="discipline">Select Discipline:</label>
+                <select id="discipline" name="discipline">
+                    <option value="digital-design">Digital Design</option>
+                    <option value="animation">Animation</option>
+                    <option value="industrial-design">Industrial Design</option>
+                </select>
+
+                <label for="degree">Select Degree:</label>
+                <select id="degree" name="degree">
+                    <option value="associate">Associate</option>
+                    <option value="bachelor">Bachelor</option>
+                </select>
+
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <!-- Cards (for displaying programs) -->
+        <section id="programs-grid">
+            <div class="program-card">
+                <img src="program-image.jpg" alt="Program Image">
+                <h3>School Name</h3>
+                <h4>Program Name</h4>
+                <p>Associate Degree in Digital Design</p>
+                <p>Short description of the program...</p>
+                <a href="program-details.html">Learn More</a>
+            </div>
+            <!-- More program cards -->
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact Information</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+    </footer>
+
+</body>
+</html>
