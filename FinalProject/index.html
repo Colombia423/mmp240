@@ -24,13 +24,13 @@
     <main>
         <!-- Search Filters (on the homepage) -->
         <section id="search-filters">
-            <form>
+            <form id="search-form">
                 <label for="borough">Select Borough:</label>
                 <select id="borough" name="borough">
                     <option value="all">All Boroughs</option>
                     <option value="manhattan">Manhattan</option>
                     <option value="brooklyn">Brooklyn</option>
-                    <!-- More boroughs... -->
+                    <option value="queens">Queens</option>
                 </select>
 
                 <label for="discipline">Select Discipline:</label>
@@ -50,25 +50,17 @@
             </form>
         </section>
 
-        <!-- Cards (for displaying programs) -->
+        <!-- Programs Grid (dynamically populated by JS) -->
         <section id="programs-grid">
-            <div class="program-card">
-                <img src="program-image.jpg" alt="Program Image">
-                <h3>School Name</h3>
-                <h4>Program Name</h4>
-                <p>Associate Degree in Digital Design</p>
-                <p>Short description of the program...</p>
-                <a href="program-details.html">Learn More</a>
-            </div>
-            <!-- More program cards -->
+            <!-- Program cards will be injected here by JavaScript -->
         </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>Contact Information</p>
-        <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+        <p>Contact Information | <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>

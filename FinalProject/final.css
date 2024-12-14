@@ -21,10 +21,11 @@ header, footer {
 
 nav ul {
     list-style: none;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
@@ -47,6 +48,17 @@ button {
 
 button:hover {
     background-color: #555;
+}
+
+/* Search Form */
+#search-filters {
+    margin: 20px;
+    text-align: center;
+}
+
+#search-filters select {
+    margin: 10px;
+    padding: 10px;
 }
 
 /* Grid for Programs */
@@ -102,20 +114,10 @@ button:hover {
 @media (max-width: 768px) {
     nav ul {
         text-align: center;
-        display: block;
+        flex-direction: column;
     }
 
     .program-card {
         padding: 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    header {
-        font-size: 14px;
-    }
-
-    footer {
-        font-size: 12px;
     }
 }
