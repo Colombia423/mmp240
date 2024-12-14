@@ -13,52 +13,51 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="borough.html">Search by Borough</a></li>
-                <li><a href="discipline.html">Search by Discipline</a></li>
-                <li><a href="degree.html">Search by Degree</a></li>
+                <li><a href="manhattan.html">Manhattan</a></li>
+                <li><a href="brooklyn.html">Brooklyn</a></li>
+                <li><a href="queens.html">Queens</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Main Content -->
     <main>
-        <!-- Search Filters (on the homepage) -->
-        <section id="search-filters">
-            <form id="search-form">
-                <label for="borough">Select Borough:</label>
-                <select id="borough" name="borough">
-                    <option value="all">All Boroughs</option>
+        <h1>Find Design & Animation Programs at CUNY Colleges</h1>
+
+        <!-- Search Filters -->
+        <div id="search-filters">
+            <h2>Filter Programs</h2>
+            <form id="filters-form">
+                <select id="borough-filter">
+                    <option value="">Select Borough</option>
                     <option value="manhattan">Manhattan</option>
                     <option value="brooklyn">Brooklyn</option>
                     <option value="queens">Queens</option>
                 </select>
 
-                <label for="discipline">Select Discipline:</label>
-                <select id="discipline" name="discipline">
+                <select id="discipline-filter">
+                    <option value="">Select Discipline</option>
                     <option value="digital-design">Digital Design</option>
                     <option value="animation">Animation</option>
                     <option value="industrial-design">Industrial Design</option>
                 </select>
 
-                <label for="degree">Select Degree:</label>
-                <select id="degree" name="degree">
+                <select id="degree-filter">
+                    <option value="">Select Degree</option>
                     <option value="associate">Associate</option>
                     <option value="bachelor">Bachelor</option>
                 </select>
-
                 <button type="submit">Search</button>
             </form>
-        </section>
+        </div>
 
-        <!-- Programs Grid (dynamically populated by JS) -->
-        <section id="programs-grid">
-            <!-- Program cards will be injected here by JavaScript -->
-        </section>
+        <!-- Programs Grid -->
+        <section id="programs-grid"></section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>Contact Information | <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+        <p>&copy; 2024 CUNY Design & Animation Programs. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
