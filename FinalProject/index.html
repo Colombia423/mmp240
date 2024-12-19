@@ -1,58 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Program Catalog</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design Programs - CUNY</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="logo">School Programs</div>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/associates">Associates Programs</a></li>
-                <li><a href="/bachelors">Bachelor’s Programs</a></li>
-                <li><a href="/digital-design">Digital Design</a></li>
-                <!-- More links as needed -->
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Secondary Navigation (Category Nav) -->
-    <nav class="category-nav">
-        <ul>
-            <li><a href="/programs/brooklyn">Programs in Brooklyn</a></li>
-            <li><a href="/programs/bronx">Programs in Bronx</a></li>
-            <li><a href="/programs/manhattan">Programs in Manhattan</a></li>
-            <li><a href="/programs/queens">Programs in Queens</a></li>
-        </ul>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/programs">Programs</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <!-- Main Content -->
-    <main>
-        <h1>Category: Associates Degree Programs</h1>
-        <div class="card-grid">
-            <!-- Card 1 -->
-            <div class="card">
-                <img src="program-image.jpg" alt="Program Image">
-                <div class="card-content">
-                    <h3>School Name</h3>
-                    <p><strong>Program Name</strong></p>
-                    <p><em>Degree Type</em></p>
-                    <p class="description">Short description of the program...</p>
-                    <a href="https://example.com" class="program-link">Learn more</a>
-                </div>
-            </div>
-            <!-- Additional Cards... -->
-        </div>
-    </main>
+  <!-- Main Content -->
+  <main class="homepage">
+    <section class="search-bar">
+      <input type="text" placeholder="Search Programs by Borough, Discipline, or Degree...">
+    </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 School Programs. All Rights Reserved.</p>
-    </footer>
+    <!-- Category Grid -->
+    <section class="program-categories">
+      <div class="category-card">
+        <img src="brooklyn.jpg" alt="Brooklyn">
+        <h3>Programs in Brooklyn</h3>
+        <p>Description of programs in Brooklyn...</p>
+      </div>
+      <div class="category-card">
+        <img src="manhattan.jpg" alt="Manhattan">
+        <h3>Programs in Manhattan</h3>
+        <p>Description of programs in Manhattan...</p>
+      </div>
+      <!-- Add more category cards as necessary -->
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 CUNY - Design Programs</p>
+  </footer>
+
 </body>
 </html>
