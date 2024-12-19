@@ -3,63 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CUNY Design & Animation Programs</title>
+    <title>Program Catalog</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <!-- Header -->
     <header>
-        <nav>
+        <div class="logo">School Programs</div>
+        <nav class="main-nav">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="manhattan.html">Manhattan</a></li>
-                <li><a href="brooklyn.html">Brooklyn</a></li>
-                <li><a href="queens.html">Queens</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/associates">Associates Programs</a></li>
+                <li><a href="/bachelors">Bachelor’s Programs</a></li>
+                <li><a href="/digital-design">Digital Design</a></li>
+                <!-- More links as needed -->
             </ul>
         </nav>
     </header>
 
+    <!-- Secondary Navigation (Category Nav) -->
+    <nav class="category-nav">
+        <ul>
+            <li><a href="/programs/brooklyn">Programs in Brooklyn</a></li>
+            <li><a href="/programs/bronx">Programs in Bronx</a></li>
+            <li><a href="/programs/manhattan">Programs in Manhattan</a></li>
+            <li><a href="/programs/queens">Programs in Queens</a></li>
+        </ul>
+    </nav>
+
     <!-- Main Content -->
     <main>
-        <h1>Find Design & Animation Programs at CUNY Colleges</h1>
-
-        <!-- Search Filters -->
-        <div id="search-filters">
-            <h2>Filter Programs</h2>
-            <form id="filters-form">
-                <select id="borough-filter">
-                    <option value="">Select Borough</option>
-                    <option value="manhattan">Manhattan</option>
-                    <option value="brooklyn">Brooklyn</option>
-                    <option value="queens">Queens</option>
-                </select>
-
-                <select id="discipline-filter">
-                    <option value="">Select Discipline</option>
-                    <option value="digital-design">Digital Design</option>
-                    <option value="animation">Animation</option>
-                    <option value="industrial-design">Industrial Design</option>
-                </select>
-
-                <select id="degree-filter">
-                    <option value="">Select Degree</option>
-                    <option value="associate">Associate</option>
-                    <option value="bachelor">Bachelor</option>
-                </select>
-                <button type="submit">Search</button>
-            </form>
+        <h1>Category: Associates Degree Programs</h1>
+        <div class="card-grid">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="program-image.jpg" alt="Program Image">
+                <div class="card-content">
+                    <h3>School Name</h3>
+                    <p><strong>Program Name</strong></p>
+                    <p><em>Degree Type</em></p>
+                    <p class="description">Short description of the program...</p>
+                    <a href="https://example.com" class="program-link">Learn more</a>
+                </div>
+            </div>
+            <!-- Additional Cards... -->
         </div>
-
-        <!-- Programs Grid -->
-        <section id="programs-grid"></section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 CUNY Design & Animation Programs. All rights reserved.</p>
+        <p>&copy; 2024 School Programs. All Rights Reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
