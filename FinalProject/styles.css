@@ -3,103 +3,138 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
 }
 
 header {
-  background-color: #222;
+  background-color: #333;
   color: #fff;
-  padding: 20px 0;
-}
-
-.navbar ul {
-  list-style: none;
+  padding: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navbar li {
-  margin: 0 20px;
+header .logo {
+  font-size: 1.5em;
 }
 
-.navbar a {
+header .main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header .main-nav ul li {
+  margin-right: 20px;
+}
+
+header .main-nav ul li a {
+  color: #fff;
   text-decoration: none;
-  color: #fff;
-  font-weight: bold;
 }
 
-footer {
-  background-color: #222;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
+.search form {
+  padding: 20px;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Page Content */
-.category-page {
-  text-align: center;
-  padding: 50px 20px;
+.search label {
+  margin-bottom: 5px;
 }
 
-h2 {
-  font-size: 2rem;
+.search select, .search button {
+  padding: 10px;
   margin-bottom: 20px;
 }
 
-/* Program Cards */
-.programs-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-  justify-content: center;
-  margin-top: 20px;
+.programs-overview {
+  padding: 40px;
 }
 
-.program-card {
-  background-color: #fff;
+.program-category {
+  margin-bottom: 40px;
+}
+
+.program-category h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+/* Card Layout using CSS Grid */
+.program-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  transition: transform 0.3s ease;
 }
 
-.program-card img {
-  max-width: 100%;
-  height: auto;
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
   border-radius: 8px;
 }
 
-.program-card h4 {
-  font-size: 1.25rem;
+.card h3 {
+  font-size: 1.2em;
   margin: 10px 0;
 }
 
-.program-card a {
-  text-decoration: none;
+.card a {
   color: #007BFF;
-  font-weight: bold;
+  text-decoration: none;
 }
 
-.program-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
-/* Media Queries for Responsiveness */
+/* Responsive Design */
 @media (max-width: 768px) {
-  .navbar ul {
+  .program-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  header .main-nav ul {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 }
 
 @media (max-width: 480px) {
-  .programs-grid {
+  .program-cards {
     grid-template-columns: 1fr;
   }
+  
+  .search form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-  .program-card {
-    padding: 15px;
+  .search select, .search button {
+    flex: 1 0 100%;
+    margin-bottom: 10px;
   }
 }

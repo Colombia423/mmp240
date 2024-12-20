@@ -3,49 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Design Programs - CUNY</title>
+  <title>CUNY Design and Animation Programs</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <!-- Header -->
   <header>
-    <nav class="navbar">
+    <div class="logo">CUNY Design Programs</div>
+    <nav class="main-nav">
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/programs">Programs</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Programs</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
   </header>
+  
+  <div class="search">
+    <form>
+      <label for="borough">Choose Borough:</label>
+      <select id="borough" name="borough">
+        <option value="brooklyn">Brooklyn</option>
+        <option value="bronx">Bronx</option>
+        <option value="manhattan">Manhattan</option>
+        <option value="queens">Queens</option>
+      </select>
 
-  <!-- Main Content -->
-  <main class="homepage">
-    <section class="search-bar">
-      <input type="text" placeholder="Search Programs by Borough, Discipline, or Degree...">
-    </section>
+      <label for="discipline">Choose Discipline:</label>
+      <select id="discipline" name="discipline">
+        <option value="digital-design">Digital Design</option>
+        <option value="animation">Animation</option>
+        <option value="industrial-design">Industrial Design</option>
+      </select>
 
-    <!-- Category Grid -->
-    <section class="program-categories">
-      <div class="category-card">
-        <img src="brooklyn.jpg" alt="Brooklyn">
-        <h3>Programs in Brooklyn</h3>
-        <p>Description of programs in Brooklyn...</p>
+      <label for="degree">Choose Degree:</label>
+      <select id="degree" name="degree">
+        <option value="associate">Associate Degree</option>
+        <option value="bachelor">Bachelor's Degree</option>
+      </select>
+
+      <button type="submit">Search</button>
+    </form>
+  </div>
+
+  <section class="programs-overview">
+    <div class="program-category">
+      <h2>Programs in Brooklyn</h2>
+      <div class="program-cards">
+        <div class="card">
+          <img src="program-image.jpg" alt="Program Image">
+          <h3>Program Name</h3>
+          <p>School Name</p>
+          <p>Degree: A.S.</p>
+          <p>Description: Program description goes here.</p>
+          <a href="#">Learn More</a>
+        </div>
       </div>
-      <div class="category-card">
-        <img src="manhattan.jpg" alt="Manhattan">
-        <h3>Programs in Manhattan</h3>
-        <p>Description of programs in Manhattan...</p>
-      </div>
-      <!-- Add more category cards as necessary -->
-    </section>
-  </main>
+    </div>
+    <!-- Additional categories here -->
+  </section>
 
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2024 CUNY - Design Programs</p>
+    <p>&copy; 2024 CUNY Design Programs. All Rights Reserved.</p>
   </footer>
-
 </body>
 </html>
